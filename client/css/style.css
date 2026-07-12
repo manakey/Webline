@@ -74,3 +74,13 @@ body{
     color:#06C755;
     text-decoration:none;
 }
+#message{
+    color:#e53935;
+    text-align:center;
+    margin-top:15px;
+    min-height:20px;
+}
+#registerBtn{
+    background:#06C755;
+    color:white;
+}
