@@ -11,10 +11,10 @@ const server = http.createServer(app);
 const io = new Server(server);
 
 const PORT = process.env.PORT || 3000;
-
+const messageRoutes = require("./routes/messages");
 // JSONを受け取れるようにする
 app.use(express.json());
-
+app.use("/api/messages", messageRoutes);
 // 静的ファイル
 app.use(express.static(path.join(__dirname, "../client")));
 

@@ -28,7 +28,9 @@ loginBtn.addEventListener("click", async () => {
 
     if (data.success) {
 
-        alert(`ようこそ ${data.username} さん！`);
+        sessionStorage.setItem("username",data.username);
+
+        location.href="/pages/home.html";
 
         // 次のステップでチャット画面へ移動
         // location.href = "/chat.html";

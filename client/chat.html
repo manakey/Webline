@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebLine チャット</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="chat">
+
+<header>
+
+<h2>💬 WebLine</h2>
+
+<div id="userInfo">
+
+<span id="username">Guest</span>
+
+<button id="logoutBtn">ログアウト</button>
+
+</div>
+
+</header>
+
+<div id="messages">
+
+<div class="system">
+WebLineへようこそ！
+</div>
+
+</div>
+
+<div id="sendArea">
+
+<input
+id="messageInput"
+placeholder="メッセージを入力">
+
+<button id="sendBtn">
+
+送信
+
+</button>
+
+</div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chat.js"></script>
+
+</body>
+</html>
